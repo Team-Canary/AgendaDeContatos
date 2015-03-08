@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 {% block corpo %}
 {% load staticfiles %}
-<p><a href="/logout/">logout</a></p>
-<a href="/adiciona/">Adicionar novo registro</a>
+<button onclick="location. href='/logout/'">Logout</button>
+<button onclick="location. href='/adiciona/'">Adicionar Contato</button>
 <ul>
     {% for item in lista_itens %}
     <li>
