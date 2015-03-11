@@ -1,14 +1,15 @@
 {% extends 'base.html' %}
-{% block corpo %}
 {% block title %} Lista de Contatos {% endblock %}
 {% load staticfiles %}
-
+{% block corpo %}
 <button  class="btn btn-warning btn-sm" onclick="location. href='/adiciona/'">Adicionar Contato</button><br><br>
 <ul>
     {% for item in lista_itens %}
     <li style="padding: 5px 0">
-		 <div class="col-md-9">{{ item.nome }}</div><div class="col-md-3"></div><a href="/item/{{ item.id }}/"><button class="btn btn-xs btn-primary">Editar</button></a>
-        <a href="/remove/{{ item.id }}/"><button class="btn btn-xs  btn-danger">remover</button></a>
+		<div class="col-md-9"><a href="/itemview/{{ item.id }}/">{{ item.nome }}</a></div>
+        <div class="col-md-3"></div>
+        <a href="/item/{{ item.id }}/"><button class="btn btn-xs btn-primary">Editar</button></a>
+        <a href="/remove/{{ item.id }}/"><button class="btn btn-xs  btn-danger">Remover</button></a>
     </li>
     {% empty %}
     <li>Nenhum registro encontrado.</li>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block corpo %}
+
+<h1>{{item.nome}}</h1>
+
+<p>Nome: {{item.nome}}</p>
+<p>Email: {{item.email}}</p>
+<p>Telefone 1: {{item.telefone1}}</p>
+<p>Telefone 2: {{item.telefone2}}</p>
+<p>Endereço: {{item.endereco}}</p>
+<p>Rede Social: <a href="http://{{item.redeSocial}}">{{item.redeSocial}}</a></p>
+
+<a href="/item/{{ item.id }}/"><button class="btn btn-xs btn-primary">Editar</button></a>
+<a href="/"><button class="btn btn-xs btn-primary">Voltar para Listagem</button></a>
+{% endblock %}

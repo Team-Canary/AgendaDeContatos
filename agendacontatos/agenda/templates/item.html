@@ -1,10 +1,11 @@
 {% extends 'base.html' %}
+
 {% block corpo %}
 <h1>{{item.nome}}</h1>
 <form action="" method="post">
     {% csrf_token %}
     {{ form.as_p}}
-    <button type="submit">Atualizar</button>
+    <button type="submit" class="btn btn-xs btn-primary">Atualizar</button>
+    <a href="/"><button class="btn btn-xs btn-primary">Voltar para Listagem</button></a>
 </form>
-<p><a href="/"> Voltar para a listagem </a></a></p>
 {% endblock %}
