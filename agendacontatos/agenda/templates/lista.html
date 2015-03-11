@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% block corpo %}
+{% block title %} Lista de Contatos {% endblock %}
 {% load staticfiles %}
-<button onclick="location. href='/logout/'">Logout</button>
-<button onclick="location. href='/adiciona/'">Adicionar Contato</button>
+
+<button  class="btn btn-warning btn-sm" onclick="location. href='/adiciona/'">Adicionar Contato</button><br><br>
 <ul>
     {% for item in lista_itens %}
-    <li>
-        <a href="/remove/{{ item.id }}/"><img src="{% static 'img/lixeira.png'  %}" width="20px" height="20px"></a>
-        <a href="/item/{{ item.id }}/">
-            {{ item.nome }}</a>
+    <li style="padding: 5px 0">
+		 <div class="col-md-9">{{ item.nome }}</div><div class="col-md-3"></div><a href="/item/{{ item.id }}/"><button class="btn btn-xs btn-primary">Editar</button></a>
+        <a href="/remove/{{ item.id }}/"><button class="btn btn-xs  btn-danger">remover</button></a>
     </li>
     {% empty %}
     <li>Nenhum registro encontrado.</li>
     {% endfor %}
 </ul>
+
+
 {% endblock %}

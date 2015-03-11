@@ -10,7 +10,7 @@ urlpatterns = patterns('',
     url(r'adiciona/$', 'agenda.views.adiciona'),
     url(r'item/(?P<id_item>\d+)/$', 'agenda.views.item'),
     url(r'remove/(?P<id_item>\d+)/$', 'agenda.views.remove'),
-
+    url(r'exporta/$', 'agenda.views.some_view'),
     url(r'^login/$', 'django.contrib.auth.views.login',{'template_name': 'login.html'}),
     url(r'^logout/$', 'django.contrib.auth.views.logout_then_login',{'login_url': '/login/'}),
 

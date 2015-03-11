@@ -1,14 +1,20 @@
-{% extends "base.html" %}
+{% extends 'base2.html' %}
 {% block corpo %}
-{% if form.errors %}
-<p>Seu usuário e senha não conferem. Tente novamente.</p>
-{% endif %}
-<form action="" method="post">
-{% csrf_token %}
-<table>
-<tr><td>{{form.username.label_tag}}</td><td>{{form.username}}</td></tr>
-<tr><td>{{form.password.label_tag}}</td><td>{{form.password}}</td></tr>
-<tr><td colspan="2"><button type="submit">Login</button></td></tr>
-</table>
-</form>
+{% load bootstrap3 %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+	<div class="row">
+		<div class="center-block" style="width:400px; padding: 30px">
+			<img src="{{ STATIC_URL }}img/logo.gif"/>
+			<form action="" method="post" class="form">
+				{% csrf_token %}
+				{% bootstrap_form form %}
+				{% buttons %}
+					<button type="submit" class="btn btn-primary">
+						{% bootstrap_icon "user" %} Entrar
+					</button>
+				{% endbuttons %}
+			</form>
+		</div>
+	</div>
 {% endblock %}

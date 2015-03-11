@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    {% block cabecalho %}
+    <title>Agenda de Contatos</title>
+    {% load bootstrap3 %}
+    
+    {# Carregar os arquivos de css #}
+    {% bootstrap_css %}
+    
+    {# Carregar os arquivos de javascript #}
+    {% bootstrap_javascript %}
+    {% endblock %}
+</head>
+<body>
+{% block corpo %}{% endblock %}
+<div class="footer text-center">
+<div class="container">
+<p>Desenvolvido por Canary Team</p>
+</div>
+</div>
+<!-- JS -->
+
+</body>
+</html>
