@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
-
+{% block title %}{{item.nome}}{% endblock %}
 {% block corpo %}
-<h1>{{item.nome}}</h1>
+
 <form action="" method="post">
     {% csrf_token %}
     {{ form.as_p}}
-    <button type="submit" class="btn btn-xs btn-primary">Atualizar</button>
+    <div style="text-align: center">
+        <button type="submit" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-floppy-disk"></i> Salvar</button>
+        <a href="/"><button type="button" class="btn btn-sm btn-default">Cancelar</button></a>
+    </div>
 </form>
-<p></p>
-<a href="/"><button class="btn btn-xs btn-primary">Voltar para Listagem</button></a>
+
 {% endblock %}

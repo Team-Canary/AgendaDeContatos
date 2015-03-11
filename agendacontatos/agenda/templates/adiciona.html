@@ -1,17 +1,20 @@
 {% extends 'base.html' %}
-{% block title %}Adicionar contatos{% endblock %}
+{% block title %}Adicionar contato{% endblock %}
 {% block corpo %}
 {# Load the tag library #}
 {% load bootstrap3 %}
 {# Display django.contrib.messages as Bootstrap alerts #}
 {% bootstrap_messages %}
+
 <form action="" method="post" class="form">
-{% csrf_token %}
-{% bootstrap_form form %}
-{% buttons %}
-<button type="submit" class="btn btn-primary">
-{% bootstrap_icon "plus" %} Adicionar
-</button>
-{% endbuttons %}
+    {% csrf_token %}
+    {% bootstrap_form form %}
+    <div style="text-align: center">
+        {% buttons %}
+        <button type="submit" class="btn btn-sm btn-primary">{% bootstrap_icon "plus" %} Adicionar</button>
+        <a href="/"><button type="button" class="btn btn-sm btn-default">Cancelar</button></a>
+        {% endbuttons %}
+    </div>
 </form>
+
 {% endblock %}

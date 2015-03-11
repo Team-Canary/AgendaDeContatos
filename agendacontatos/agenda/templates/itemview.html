@@ -1,16 +1,35 @@
 {% extends 'base.html' %}
-
+{% block title %}{{item.nome}}{% endblock %}
 {% block corpo %}
 
-<h1>{{item.nome}}</h1>
+<table class="table">
+    <tbody>
+        <tr>
+            <th>Email</th>
+            <td>{{item.email}}</td>
+        </tr>
+        <tr>
+            <th>Telefone 1</th>
+            <td>{{item.telefone1}}</td>
+        </tr>
+        <tr>
+            <th>Telefone 2</th>
+            <td>{{item.telefone2}}</td>
+        </tr>
+        <tr>
+            <th>Endereço</th>
+            <td>{{item.endereco}}</td>
+        </tr>
+        <tr>
+            <th>Rede Social</th>
+            <td><a href="http://{{item.redeSocial}}">{{item.redeSocial}}</a></td>
+        </tr>
+    </tbody>
+</table>
 
-<p>Nome: {{item.nome}}</p>
-<p>Email: {{item.email}}</p>
-<p>Telefone 1: {{item.telefone1}}</p>
-<p>Telefone 2: {{item.telefone2}}</p>
-<p>Endereço: {{item.endereco}}</p>
-<p>Rede Social: <a href="http://{{item.redeSocial}}">{{item.redeSocial}}</a></p>
+<div style="text-align: center">
+    <a href="/item/{{ item.id }}/"><button class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-edit"></i> Editar</button></a>
+    <a href="/"><button class="btn btn-sm btn-default">Voltar</button></a>
+</div>
 
-<a href="/item/{{ item.id }}/"><button class="btn btn-xs btn-primary">Editar</button></a>
-<a href="/"><button class="btn btn-xs btn-primary">Voltar para Listagem</button></a>
 {% endblock %}
