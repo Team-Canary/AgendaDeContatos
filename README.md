@@ -17,11 +17,11 @@ Projeto desenvolvido na turma 2015.1 de Engenharia de Software do curso de Siste
 
 **Sobre o time:**
 - Crescêncio Lima (product owner) [**@cretchas**](https://github.com/cretchas)
-- Allexandres Sampaio [**@allexandresampaio**](https://github.com/allexandresampaio)
+- Allexandres Sampaio (scrum master) [**@allexandresampaio**](https://github.com/allexandresampaio)
 - Daniel Silva [**@dansilva**] (https://github.com/dansilva)
 - Danilo Lopes [**@loppesdan**](https://github.com/loppesdan)
 - Diana Crys [**@dianacrys**](https://github.com/dianacrys)
-- Igo Romero (scrum master) [**@igoromero**](https://github.com/igoromero)
+- Igo Romero [**@igoromero**](https://github.com/igoromero)
 - Joabe Pinheiro [**@joabepinheiro**](https://github.com/joabepinheiro)
 - Manuela Amaral [**@manuela1111**](https://github.com/manuela1111)
 
@@ -43,10 +43,10 @@ Project developed at the class 2015.1 of Software Engineering in the course of I
 
 **About the team:**
 - Crescêncio Lima (product owner) [**@cretchas**](https://github.com/cretchas)
-- Allexandres Sampaio [**@allexandresampaio**](https://github.com/allexandresampaio)
+- Allexandres Sampaio (scrum master) [**@allexandresampaio**](https://github.com/allexandresampaio)
 - Daniel Silva [**@dansilva**] (https://github.com/dansilva)
 - Danilo Lopes [**@loppesdan**](https://github.com/loppesdan)
 - Diana Crys [**@dianacrys**](https://github.com/dianacrys)
-- Igo Romero (scrum master) [**@igoromero**](https://github.com/igoromero)
+- Igo Romero [**@igoromero**](https://github.com/igoromero)
 - Joabe Pinheiro [**@joabepinheiro**](https://github.com/joabepinheiro)
 - Manuela Amaral [**@manuela1111**](https://github.com/manuela1111)
